@@ -14,8 +14,10 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () { return view('welcome');});
-Route::get('/app', function () { return view('app');}); 
+Route::get('/dasboard_test', function () { return view('welcome');});
+Route::get('/dashboard', function () { return view('app');}); 
+Route::get('/forgot-password', function () { return view('reset');});
+Route::get('/', function () { return view('login');});
 
 Auth::routes();
 

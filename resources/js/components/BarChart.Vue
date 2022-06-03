@@ -1,7 +1,7 @@
 <template>
   <div>
     <apexchart
-      width="500"
+      width="90%"
       type="bar"
       :options="chartOptions"
       :series="series"
@@ -20,7 +20,6 @@ export default {
             chart: {
             id: "vuechart-example",
             background: '#fff',
-            width: '500px',
             },
             xaxis: {
             categories: [0, 1, 2, 3, 4, 5, 6, 7],

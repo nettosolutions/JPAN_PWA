@@ -1,7 +1,7 @@
 <template>
     <apexchart 
         type="donut" 
-        width="380" 
+        width="450" 
         :options="chartOptions" 
         :series="series">
     </apexchart>
@@ -18,7 +18,6 @@ export default{
             series: [44, 55, 13, 43, 22],
             chartOptions: {
                 chart: {
-                    width: 380,
                     type: 'pie',
                     background: '#fff'
                 },

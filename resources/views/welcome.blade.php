@@ -92,19 +92,19 @@
                 <div class="panel">
                     <div class="grid-container">
                         <div class="panel-tile">
-                            <h3 class ="panel-title">Overview of activities progress</h3>
+                            <h3 class ="panel-title">{{ __("language.panel1") }}</h3>
                             <multi-bar-chart/>
                         </div>
                         <div class="grid-item">
-                            <h3 class ="panel-title">Hire By Department & Location</h3>
+                            <h3 class ="panel-title">{{ __("language.panel2") }}</h3>
                             <pie-chart class="pd-5"/>
                         </div>
                         <div class="grid-item">
-                            <h3 class="panel-title">Part time vs Full time</h3>
+                            <h3 class="panel-title">{{ __("language.panel3") }}</h3>
                             <line-chart/>
                         </div>  
                         <div class="grid-item">
-                            <h3 class="panel-title">Number of employees by Year</h3>
+                            <h3 class="panel-title">{{ __("language.panel4") }}</h3>
                             <bar-chart/>
                         </div>
                     </div>
