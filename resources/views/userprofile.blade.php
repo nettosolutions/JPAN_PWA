@@ -75,7 +75,7 @@
               <!-- ============================================================== -->
               <!-- Three charts -->
               <!-- ============================================================== -->
-              <div class="row justify-content-center">
+              <!-- <div class="row justify-content-center">
                   <div class="col-lg-4 col-md-12">
                       <div class="white-box analytics-info">
                           <h3 class="box-title">{{ __("language.card1") }}</h3>
@@ -116,32 +116,36 @@
                           </ul>
                       </div>
                   </div>
-              </div>
+              </div> -->
               
               <!-- ============================================================== -->
               <!-- Chart panel -->
               <!-- ============================================================== -->
               <div id="app">
+                <h2>{{ __("language.profile") }}</h2>
                 <div class="row">
                     <!-- .col -->
-                    <div class="col-md-12 col-lg-7 col-sm-12">
+                    <!-- <div class="col-md-12 col-lg-7 col-sm-12">
                         <div class="card white-box p-0">
                             <div class="card-body">
                                 <h3 class="box-title mb-0">{{ __("language.panel1") }}</h3>
                             </div>
-                            <div class="comment-widgets">
+                            <div class="comment-widgets"> -->
                                 <!-- Multi Bar Chart -->
-                                    <multi-bar-chart class="p-3"/> 
+                                    <!-- <multi-bar-chart class="p-3"/> 
                             </div>
                         </div>
-                    </div>
+                    </div>  -->
                     <div class="col-lg-5 col-md-12 col-sm-12">
                         <div class="card white-box p-0">
-                            <div class="card-heading">
+                            <!-- <div class="card-heading">
                                 <h3 class="box-title mb-0">{{ __("language.panel2") }}</h3>
-                            </div>
-                            <div class="card-body">
-                                <pie-chart class="p-3"/>
+                            </div> -->
+                            <div class="card-body text-center">
+                                <!-- <pie-chart class="p-3"/> -->
+                                <img src="{{ asset('images/Avatar.png') }}" alt="user-img" width="120" class="img-circle"><br/>
+                                <span class="text-blue font-medium">{{ Auth::user()->name }}</span><br/>
+                                <img src="{{ asset('images/attandance.png') }}" width="40" class="img-circle">
                             </div>
                         </div>
                     </div>
@@ -217,7 +221,7 @@
         });
     </script>
 @else
-            <a class="text-center" href="{{ route('login') }}"><h1 class="nav-link" >{{ __('Login') }}</h1></a>
+    <a class="text-center" href="{{ route('login') }}"><h1 class="nav-link" >{{ __('Login') }}</h1></a>
 @endauth
 </body>
 </html>

@@ -41,21 +41,22 @@
           <img src="{{ asset( 'images/logo.png' ) }}">
           </div>
           <div class="card-body">
-            <form>
+            <form method="post" action="{{ route('login') }}">
+              @csrf
               <div class="mb-4">
-                <label for="username" class="form-label">Email</label>
-                <input type="text" class="form-control" id="username" />
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="name" class="form-control" id="name" />
               </div>
               <div class="mb-4">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" />
+                <input type="password" name="password" class="form-control" id="password" />
               </div>
               <div class="mb-4">
                 <!-- <input type="submit" class="btn" id="forgot-password" /> -->
                 <a href="/forgot-password" for="forgot-password" class="form-label">Forgot Password</a>
               </div>
               <div class="d-grid">
-                <button class="btn text-blue main-bg"><a href="/dashboard">Login</a></button>
+                <button type="submit" class="btn text-blue main-bg">Login</button>
               </div>
             </form>
           </div>

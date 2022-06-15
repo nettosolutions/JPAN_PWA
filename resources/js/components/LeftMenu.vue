@@ -1,56 +1,61 @@
 <template>
-  <v-card>
-    <v-navigation-drawer
-      absolute
-      permanent
-      left
-    >
-      <template v-slot:prepend>
-        <v-list-item two-line>
-          <v-list-item-avatar>
-            <img src="https://randomuser.me/api/portraits/women/81.jpg">
-          </v-list-item-avatar>
-
-          <v-list-item-content>
-            <v-list-item-title>Jane Smith</v-list-item-title>
-            <v-list-item-subtitle>Logged In</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </template>
-
-      <v-divider></v-divider>
-
-      <v-list dense class="pa-6">
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-        >
-          <!-- <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon> -->
-
-          <v-list-item-content class="pa-6">
-            <v-list-item-title style="padding: 2% 0;">{{ item.title }}</v-list-item-title>
-            <br />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-  </v-card>
+  <!-- Sidebar scroll-->
+          <div class="scroll-sidebar">
+              <!-- Sidebar navigation-->
+              <nav class="sidebar-nav">
+                  <ul id="sidebarnav">
+                      <!-- User Profile-->
+                      <li class="sidebar-item pt-2">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                              aria-expanded="false">
+                              <img src="{{ asset( 'images/dashboard.png' ) }}" class="mx-1">
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu1") }}</h5></span>
+                          </a>
+                      </li>
+                      <li class="sidebar-item">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                              aria-expanded="false">
+                              <img src="{{ asset( 'images/staff.png' ) }}" class="mx-1">
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu2") }}</h5></span>
+                          </a>
+                      </li>
+                      <li class="sidebar-item">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                              aria-expanded="false">
+                              <img src="{{ asset( 'images/administration.png' ) }}" class="mx-1">
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu3") }}</h5></span>
+                          </a>
+                      </li>
+                      <li class="sidebar-item">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                              aria-expanded="false">
+                              <img src="{{ asset( 'images/reporting.png' ) }}" class="mx-1">
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu4") }}</h5></span>
+                          </a>
+                      </li>
+                      <li class="sidebar-item">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                              aria-expanded="false">
+                              <img src="{{ asset( 'images/applications.png' ) }}" class="mx-1">
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu5") }}</h5></span>
+                          </a>
+                      </li>
+                      <li class="sidebar-item">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                              aria-expanded="false">
+                              <img src="{{ asset( 'images/recruit.png' ) }}" class="mx-1">
+                              <span class="hide-menu mx-1"><h5>{{ __("language.menu6") }}</h5></span>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+              <!-- End Sidebar navigation -->
+          </div>
 </template>
 <script>
     export default {
         data () {
-        return {
-            items: [
-            { title: 'Main', icon: 'mdi-home-city' },
-            { title: 'Employees', icon: 'mdi-account' },
-            { title: 'Administration', icon: 'mdi-account-group-outline' },
-            { title: 'Reporting', icon: 'mdi-account-group-outline' },
-            { title: 'Applications', icon: 'mdi-account-group-outline' },
-            { title: 'Recruitment', icon: 'mdi-account-group-outline' },
-            ],
-        }
+        return {}
         },
     }
 </script>
