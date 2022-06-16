@@ -13,7 +13,11 @@
         "card1"  => "Agensi pengambilan pekerja",
         "card2"  => "Kadar kejayaan bulan",
         "card3"  => "Perbualan agensi pengambilan",
-        "profile"=> "Profil",
-        "orgchart"=> "Carta Organisasi",
+        "profile" => "Profil",
+        "orgchart" => "Carta Organisasi",
+        "attendance" => "Kehadiran",
+        "leavedays" => "Hari Cuti",
+        "teaching" => "Pengajaran",
+        "breaktimes"=> "Masa Rehat"
     ];
  ?>

@@ -142,42 +142,192 @@
                                 <h3 class="box-title mb-0">{{ __("language.panel2") }}</h3>
                             </div> -->
                             <div class="card-body text-center">
-                                <!-- <pie-chart class="p-3"/> -->
                                 <img src="{{ asset('images/Avatar.png') }}" alt="user-img" width="120" class="img-circle"><br/>
                                 <span class="text-blue font-medium">{{ Auth::user()->name }}</span><br/>
-                                <img src="{{ asset('images/attandance.png') }}" width="40" class="img-circle">
+                                <div class="container pt-3">
+                                    <div class="row row-cols-4">
+                                        <div class="col">
+                                            <img src="{{ asset('images/attandance.png') }}" width="40" class="img-circle"><br/>
+                                            <a class="text-blue">{{ __("language.attendance") }}</a>
+                                        </div>
+                                        <div class="col">
+                                            <img src="{{ asset('images/calendar.png') }}" width="40" class="img-circle"><br/>
+                                            <a class="text-blue text-center">{{ __("language.leavedays") }}</a>
+                                        </div>
+                                        <div class="col">
+                                            <img src="{{ asset('images/book.png') }}" width="40" class="img-circle"><br/>
+                                            <a class="text-blue">{{ __("language.teaching")}}</a>
+                                        </div>
+                                        <div class="col">
+                                            <img src="{{ asset('images/time.png') }}" width="40" class="img-circle"><br/>
+                                            <a class="text-blue">{{ __("language.breaktimes")}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
                             </div>
                         </div>
                     </div>
-                    <!-- /.col -->
-                </div>
-                <div class="row">
                     <!-- .col -->
                     <div class="col-md-12 col-lg-7 col-sm-12">
                         <div class="card white-box p-0">
                             <div class="card-body">
-                                <h3 class="box-title mb-0">{{ __("language.panel3") }}</h3>
+                                <h3 class="box-title mb-0">{{ __("language.orgchart") }}</h3>
                             </div>
                             <div class="comment-widgets">
-                                <!-- Comment Row -->
-                                <div id="app">
-                                    <line-chart class="p-3"/> 
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col-12"><img src="{{ asset('images/Avatar.png') }}" alt="user-img" width="80"
+                            class="img-circle"><span class="text-blue font-medium"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 right-line"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12"><img src="{{ asset('images/Avatar.png') }}" alt="user-img" width="80"
+                            class="img-circle"><span class="text-blue font-medium"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 right-line"></div>
+                                        <div class="col-6"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <img src="{{ asset('images/Avatar.png') }}" alt="user-img" width="100" class="img-circle"><br/>
+                                            <span class="text-blue font-medium">{{ Auth::user()->name }}</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- /.col -->
                     <div class="col-lg-5 col-md-12 col-sm-12">
                         <div class="card white-box p-0">
-                            <div class="card-heading">
-                                <h3 class="box-title mb-0">{{ __("language.panel4") }}</h3>
-                            </div>
-                            <div class="card-body">
-                                <bar-chart class="p-3"/>
+                            <div class="comment-widgets">
+                                <div class="container shadow min-vh-100 py-2">
+                                    <div class="container network_wrapper col-sm p-2 ">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#sec1">Section 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#sec2">Section 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#sec2">Section 3</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#sec2">Section 4</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#sec2">Section 5</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-bs-toggle="tab" href="#sec2">Section 6</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <form class="card-body tab-content">
+                                                <div class="tab-pane active" id="sec1">
+                                                    <h3 class="text-left">Contact Information</h3>
+                                                    <div class="container">
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                    </div>
+                                                    <h3 class="text-left">Position</h3>
+                                                    <div class="container">
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                        <div class="row row-cols-2">
+                                                            <span>Lorem ipsum</span>
+                                                            <span>Lorem ipsum dolor sit amet</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="sec2">
+                                                    <p class=" card-text">Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <div class="tab-pane" id="sec3">
+                                                    <p class=" card-text">Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <div class="tab-pane" id="sec4">
+                                                    <p class=" card-text">Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <div class="tab-pane" id="sec5">
+                                                    <p class=" card-text">Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <div class="tab-pane" id="sec6">
+                                                    <p class=" card-text">Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- /.col -->
                 </div>
+                
               </div>
           </div>
 

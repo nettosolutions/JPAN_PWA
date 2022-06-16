@@ -15,5 +15,9 @@
         "card3"  => "Recruitment conversations",
         "profile"=> "Profile",
         "orgchart"=> "Organization Chart",
+        "attendance" => "Attendance",
+        "leavedays" => "Leave Days",
+        "teaching" => "Teaching",
+        "breaktimes"=> "Break Times",
     ];
  ?>
