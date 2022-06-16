@@ -198,16 +198,6 @@
 
   <script src="{{ mix('js/app.js') }}"></script>
 
-  <!-- PWA -->
-  <script src="{{ asset('/sw.js') }}" ></script>
-    <script>
-        if(!navigator.serviceWorker.controller){
-            navigator.serviceWorker.register("/sw.js").then( function(reg)
-            {
-                console.log("Service worker has been registered for scope: " + reg.scope );
-            });
-        }
-    </script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('select[name=language]').change(function() {
@@ -219,5 +209,15 @@
 @else
             <a class="text-center" href="{{ route('login') }}"><h1 class="nav-link" >{{ __('Login') }}</h1></a>
 @endauth
+    <!-- PWA -->
+    <script src="{{ asset('/sw.js') }}" ></script>
+        <script>
+            if(!navigator.serviceWorker.controller){
+                navigator.serviceWorker.register("/sw.js").then( function(reg)
+                {
+                    console.log("Service worker has been registered for scope: " + reg.scope );
+                });
+            }
+        </script>
 </body>
 </html>

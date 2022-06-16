@@ -10,7 +10,7 @@
 }
 
 .top-line {
-    border-top: 5px #ccc solid;
+    border-top: 5px #4492BF solid;
 }
 
 .halved {
@@ -14167,7 +14167,7 @@ select.form-select.form-control-line {
 
 .scroll-sidebar {
     height: calc(100% - 20px);
-    position: relative
+    position: fixed;
 }
 
 .sidebar-nav ul {}

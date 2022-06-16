@@ -4,7 +4,7 @@
         <ul id="sidebarnav">
             <!-- User Profile-->
             <li class="sidebar-item pt-2">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ url('/dashboard') }}"
                     aria-expanded="false">
                     <img src="{{ asset( 'images/dashboard.png' ) }}" class="mx-1">
                     <span class="hide-menu mx-1"><h5>{{ __("language.menu1") }}</h5></span>
