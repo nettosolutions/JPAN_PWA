@@ -11,7 +11,7 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/users"
                     aria-expanded="false">
                     <img src="{{ asset( 'images/staff.png' ) }}" class="mx-1">
                     <span class="hide-menu mx-1"><h5>{{ __("language.menu2") }}</h5></span>
@@ -39,7 +39,7 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
+                <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/hiring"
                     aria-expanded="false">
                     <img src="{{ asset( 'images/recruit.png' ) }}" class="mx-1">
                     <span class="hide-menu mx-1"><h5>{{ __("language.menu6") }}</h5></span>

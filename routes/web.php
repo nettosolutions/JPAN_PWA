@@ -16,8 +16,12 @@ use App\Http\Controllers\Auth\LoginController;
 */
 
 Route::get('/dasboard_test', function () { return view('welcome');});
-Route::get('/dashboard', function () { return view('app');}); 
+Route::get('/dashboard', function () { return view('app');});
 Route::get('/userprofile', function () { return view('userprofile');});
+Route::get('/users', function () { return view('users');});
+Route::get('/hiring', function () { return view('hiring');});
+Route::get('/employee', function () { return view('employee');});
+Route::get('/job-description', function () { return view('job-description');});
 Route::get('/forgot-password', function () { return view('reset');});
 // Route::get('/', function () { return view('login');});
 // Route::get('/language', function () { return view('language');});

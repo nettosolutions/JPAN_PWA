@@ -18,6 +18,7 @@
         "attendance" => "Kehadiran",
         "leavedays" => "Hari Cuti",
         "teaching" => "Pengajaran",
-        "breaktimes"=> "Masa Rehat"
+        "breaktimes"=> "Masa Rehat",
+        "users"=> "Users"
     ];
  ?>

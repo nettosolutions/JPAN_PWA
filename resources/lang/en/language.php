@@ -19,5 +19,13 @@
         "leavedays" => "Leave Days",
         "teaching" => "Teaching",
         "breaktimes"=> "Break Times",
+        "users"=> "Users",
+        "employee"=> "Employee",
+        "job-description"=> "Job Description",
+        "recruitment"=> "Recruitment",
+        "WarrantInformation"=> "Warrant Information",
+        "offer"=> "Offer",
+        "CouncilInformation"=> "Council Information",
+        "MPKWaran"=> "MPK Waran",
     ];
  ?>
