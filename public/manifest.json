@@ -1,14 +1,14 @@
 {
-    "name": "JABATAN PERKHIDMATAN AWAM NEGERI SABAH",
-    "short_name": "JPAN",
+    "name": "PWA JPan",
+    "short_name": "PWA",
     "start_url": "/index.php",
     "background_color": "#6777ef",
-    "description": "JABATAN PERKHIDMATAN AWAM NEGERI SABAH",
+    "description": "Progressive Web App - JPan",
     "display": "fullscreen",
     "theme_color": "#6777ef",
     "icons": [
         {
-            "src": "images/logo.png",
+            "src": "logo.PNG",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"

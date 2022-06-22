@@ -12,10 +12,10 @@
    <link href="assets/css/style.min.css" rel="stylesheet">
     <!-- All Jquery -->
     <!-- ============================================================== -->
-   
+
     <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    
+
     <!--This page JavaScript -->
     <!--chartis chart-->
     <script src="assets/js/jquery.min.js"></script>
@@ -117,7 +117,7 @@
                       </div>
                   </div>
               </div>
-              
+
               <!-- ============================================================== -->
               <!-- Chart panel -->
               <!-- ============================================================== -->
@@ -131,7 +131,7 @@
                             </div>
                             <div class="comment-widgets">
                                 <!-- Multi Bar Chart -->
-                                    <multi-bar-chart class="p-3"/> 
+                                    <multi-bar-chart class="p-3"/>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                             <div class="comment-widgets">
                                 <!-- Comment Row -->
                                 <div id="app">
-                                    <line-chart class="p-3"/> 
+                                    <line-chart class="p-3"/>
                                 </div>
                             </div>
                         </div>
@@ -198,16 +198,7 @@
 
   <script src="{{ mix('js/app.js') }}"></script>
 
-  <!-- PWA -->
-  <script src="{{ asset('/sw.js') }}" ></script>
-    <script>
-        if(!navigator.serviceWorker.controller){
-            navigator.serviceWorker.register("/sw.js").then( function(reg)
-            {
-                console.log("Service worker has been registered for scope: " + reg.scope );
-            });
-        }
-    </script>
+
     <script type="text/javascript">
         $(document).ready(function() {
             $('select[name=language]').change(function() {
@@ -219,5 +210,15 @@
 @else
             <a class="text-center" href="{{ route('login') }}"><h1 class="nav-link" >{{ __('Login') }}</h1></a>
 @endauth
+<!-- PWA -->
+<script src="{{ asset('/sw.js') }}" ></script>
+<script>
+    if(!navigator.serviceWorker.controller){
+        navigator.serviceWorker.register("/sw.js").then( function(reg)
+        {
+            console.log("Service worker has been registered for scope: " + reg.scope );
+        });
+    }
+</script>
 </body>
 </html>
